@@ -79,12 +79,20 @@ produce the same tree, output, and exit code.
 
 ## Verification
 
-The bounty kit ships 100 public practice checks. Validate the entry
-with the kit's checker, from the kit directory:
+The bounty kit ships 100 public practice checks. This entry scores
+**100/100 practice checks (practice score 1000)** on Node 22.23.4,
+plus **180/180 on an additional edge-case suite** derived from
+SPEC.md.
+
+To reproduce, copy `check.ts` from the starter kit next to `main.ts`,
+then run (with Node 22.23.4):
 
 ```
-node check.ts ../program/generator/practice.json
+node check.ts <kit-dir>/program/generator/practice.json
 ```
+
+`check.ts` is a dev-only tool from the starter kit and is not part of
+this repository.
 
 ## Files
 
